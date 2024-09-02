@@ -41,6 +41,9 @@ public class Main {
                 temp = input.nextLine();
                 continue;
             }
+            catch (Exception e) {
+                System.out.println("Something went wrong!");
+            }
             valid = true;
         }
 
@@ -49,7 +52,6 @@ public class Main {
             case "*" -> System.out.println(a * b);
             case "+" -> System.out.println(a + b);
             case "-" -> System.out.println(a - b);
-            default -> System.out.println("Something went wrong!");
         }
     }
 }
